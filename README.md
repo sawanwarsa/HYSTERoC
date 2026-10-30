@@ -120,7 +120,7 @@ Exact simulator commands and FPGA constraints should be documented as the corres
 
 3. Open the project in Vivado or your supported Verilog simulator.
 4. Select a testbench, compile its required RTL dependencies, and run the simulation.
-5. Record the exact test and outcome. Use the project’s actual source list and simulator settings; do not assume every testbench can be compiled together as one simulation.
+5. Record the exact test and outcome. Use project’s actual source list and simulator settings; do not assume every testbench can be compiled together as one simulation.
 
 ## Contributing
 
