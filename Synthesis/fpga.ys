@@ -1,0 +1,10 @@
+read_verilog -lib -specify +/xilinx/cells_sim.v +/xilinx/cells_xtra.v
+read_verilog -I. congestion_estimator.v crossbar.v drain_detector.v ewma_filter.v hysteresis_controller.v input_fifo.v noc_router.v noc_top.v packet_sink.v packet_tracker.v performance_monitor.v round_robin_arbiter.v route_compute.v route_select.v switch_allocator.v traffic_generator.v transition_controller.v nexys_core.v nexys_top.v
+hierarchy -check -top nexys_top
+synth_xilinx -top nexys_top -family xc7 -flatten
+flatten
+opt_clean -purge
+hierarchy -top nexys_top
+tee -o fpga_stat.txt stat
+write_edif -pvector bra nexys_top.edif
+write_verilog -noattr nexys_top_netlist.v

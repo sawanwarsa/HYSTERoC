@@ -1,0 +1,34 @@
+
+27. Printing statistics.
+
+=== nexys_top ===
+
+   Number of wires:              17184
+   Number of wire bits:          56149
+   Number of public wires:        1573
+   Number of public wire bits:   12457
+   Number of ports:                  4
+   Number of port bits:             34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              28755
+     BUFG                            2
+     CARRY4                        953
+     FDRE                         5800
+     FDSE                          536
+     IBUF                           18
+     INV                          4942
+     LUT1                          287
+     LUT2                         4765
+     LUT3                         3403
+     LUT4                         1348
+     LUT5                         1595
+     LUT6                         3305
+     MMCME2_BASE                     1
+     MUXF7                        1169
+     MUXF8                         342
+     OBUF                           16
+     RAM32M                        272
+     SRL16E                          1
+
